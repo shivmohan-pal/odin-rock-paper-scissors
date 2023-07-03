@@ -3,3 +3,6 @@
 
 ## odin-rock-paper-scissors  - [LIve Preview](https://shivmohan-pal.github.io/odin-rock-paper-scissors/index.html)
 
+
+### This thing works in console for now, later on i will update it.
+

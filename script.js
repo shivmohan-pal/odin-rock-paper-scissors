@@ -82,6 +82,8 @@ function scoreUpdate() {
 function resetGame() {
     wins = 0;
     losses = 0;
+    playerSelectedImg.setAttribute('src', `./images/question-mark.gif`);
+    computerSelectedImg.setAttribute('src', `./images/question-mark.gif`);
     scoreUpdate();
     popupToggle(finalRsultWindow, 'block');
 }

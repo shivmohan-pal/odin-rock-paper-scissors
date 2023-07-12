@@ -53,7 +53,7 @@ function playRound(playerSelection, computerSelection) {
 function popupToggle(element, replacingValue) {
     let elementDisplayValue = window.getComputedStyle(element).getPropertyValue('display');
     element.style.display = elementDisplayValue !== 'none' ? 'none' : replacingValue;
-    console.log(window.getComputedStyle(element).getPropertyValue('display'));
+    // console.log(window.getComputedStyle(element).getPropertyValue('display'));
 }
 
 function winOrLose(element1, element2, result, text) {
@@ -99,7 +99,7 @@ options.forEach(function (element) {
             winOrLoseDisplay(wins, losses);
             return;
         }
-        console.log(element.getAttribute('id'));
+        // console.log(element.getAttribute('id'));
         let playerSelection = element.getAttribute('id');
         let computerSelection = getComputerChoice();
         let result = playRound(playerSelection, computerSelection);
@@ -118,7 +118,7 @@ options.forEach(function (element) {
 })
 
 finalRsultWindow.addEventListener("click", function (event) {
-    console.log(event.target.classList[0] === 'popup-box');
+    // console.log(event.target.classList[0] === 'popup-box');
     if (event.target.classList[0] === 'popup-box') popupToggle(finalRsultWindow, 'block');
 });
 

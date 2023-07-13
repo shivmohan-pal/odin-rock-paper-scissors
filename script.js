@@ -82,6 +82,8 @@ function scoreUpdate() {
 function resetGame() {
     wins = 0;
     losses = 0;
+    scoreBoardHeading.textContent= "Choose your weapon";
+    scoreBoardParagraph.textContent= "First 5 points scorer wins the game";
     playerSelectedImg.setAttribute('src', `./images/question-mark.gif`);
     computerSelectedImg.setAttribute('src', `./images/question-mark.gif`);
     scoreUpdate();
